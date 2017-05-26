@@ -17,11 +17,11 @@ router.use('/', wechat('testwc', (req, res, next) => {
     "button": [{
         "type":"view",
         "name":"上传视频",
-        "url":"http://www.youku.com/"
+        "url":"http://wechatme.leanapp.cn/wx/#/vedio/add"
     },{
         "type":"view",
         "name":"以往视频",
-        "url":"http://www.youku.com/"
+        "url":"http://wechatme.leanapp.cn/wx/#/vedio/list"
     }]
   }
   api.createMenu(menu, function (err, result) {

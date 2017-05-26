@@ -26,16 +26,18 @@ router.get('/', function(req, res, next) {
 // 新增视频项目
 router.post('/', function(req, res, next) {
   var openid = req.body.openid;
+  if (!openid) {
+    return res.status(500).send('err')
+  }
   var title = req.body.title;
   var href = req.body.href;
   var pwd = req.body.pwd || '';
   var content = req.body.content;
   var vedio = new Vedio();
   vedio.set('openid', openid);
-  vedio.set('content', content);
+  vedio.set('title', title);
   vedio.set('href', href);
   vedio.set('pwd', pwd);
-  vedio.set('content', content);
   vedio.save().then(function(vedio) {
     res.send(vedio);
   }).catch(next);
