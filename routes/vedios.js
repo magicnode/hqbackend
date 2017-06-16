@@ -61,7 +61,6 @@ router.put('/:id', function(req, res, next) {
   }).catch(next);
 });
 
-
 // 删除视频项目
 router.delete('/:id', function(req, res, next) {
   var objectId = req.params.id;

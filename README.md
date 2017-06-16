@@ -1,45 +1,7 @@
-# Node.js Getting started
-在 LeanCloud 云引擎上使用 Express 的 Node.js 实例项目。
+## express leancloud
+提供了微信授权登录，增删改啥等功能
 
-## 一键部署
-[![Deploy to LeanEngine](http://ac-32vx10b9.clouddn.com/109bd02ee9f5875a.png)](https://leancloud.cn/1.1/engine/deploy-button)
-
-## 本地运行
-
-首先确认本机已经安装 [Node.js](http://nodejs.org/) 运行环境和 [LeanCloud 命令行工具](https://leancloud.cn/docs/leanengine_cli.html)，然后执行下列指令：
-
-```
-$ git clone https://github.com/leancloud/node-js-getting-started.git
-$ cd node-js-getting-started
-```
-
-安装依赖：
-
-```
-npm install
-```
-
-登录并关联应用：
-
-```
-lean login
-lean switch
-```
-
-启动项目：
-
-```
-lean up
-```
-
-之后你就可以在 [localhost:3000](http://localhost:3000) 访问到你的应用了。
-
-## 部署到 LeanEngine
-
-部署到预备环境（若无预备环境则直接部署到生产环境）：
-```
-lean deploy
-```
+基于express
 
 ## 相关文档
 
